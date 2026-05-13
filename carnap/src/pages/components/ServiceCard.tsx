@@ -27,7 +27,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ caption, url, imageUrl }) => 
         <img 
           src={imageUrl} 
           alt="Diagnostic Icon" 
-          style={{ width: '47px', filter: 'brightness(0) invert(1)' }} 
+          style={{ width: '47px', /*filter: 'brightness(1) invert(1)' */}} 
         />
       </div>
 
@@ -35,6 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ caption, url, imageUrl }) => 
       <hr style={{ width: '80%', borderTop: '2px solid white', opacity: 1 }} />
 
       {/* Текстовый блок в рамке */}
+      <Link to={`/page?id=${url}`}>
       <div 
         className="d-flex align-items-center justify-content-center p-3 mb-3" 
         style={{ 
@@ -44,12 +45,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ caption, url, imageUrl }) => 
           maxHeight: '90px', 
         }}
       >
-        <Link to={`/page?id=${url}`}>
+        
         <h5 className="fw-bold m-0 text-uppercase" style={{ fontSize: '0.8rem', letterSpacing: '1px', paddingLeft: '3px' , paddingRight: '3px'}} >
           {caption}
         </h5>
-        </Link>
+        
       </div>
+      </Link>
     </div>
   );
 };

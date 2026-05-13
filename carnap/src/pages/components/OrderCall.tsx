@@ -2,6 +2,7 @@ import { useRef, useState } from "react"
 import Botapi from "..//..//metadata/telegramBotId.json"
 import { Link } from "react-router-dom";
 import HomeButton from "./homeBtn";
+import { useEffect } from "react";
 const OrderCallPage = () => {
     const config = Array.isArray(Botapi) ? Botapi[0] : Botapi;
     const api = config?.api;
@@ -20,6 +21,9 @@ const OrderCallPage = () => {
         })
         
     }
+    useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [])
     return (
         <div className="w-100 container" style={{
             padding: '10px',

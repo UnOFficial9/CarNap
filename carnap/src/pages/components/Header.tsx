@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Links } from "react-router-dom"
 
 const Header = () => {
     return (
@@ -28,11 +28,11 @@ const Header = () => {
                 {/* Текст */}
                 <div className="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start px-4" style={{ padding: '20px]' }}>
                     <div className='d-flex w-100'>
-                        <div>
+                        <div> <Link to={"/"}>
                             <h2 className="fw-bold"
                             style={{
                                 fontSize: 'clamp(14px, 4vw, 28px)'
-                            }}>CAR NAP | СТО, Автосервіс Київ</h2>
+                            }}>CAR NAP | СТО, Автосервіс Київ</h2></Link>
                         </div>
                     </div>
                 </div>

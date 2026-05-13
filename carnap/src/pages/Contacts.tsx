@@ -1,6 +1,10 @@
 import HomeButton from "./components/homeBtn"
+import { useEffect } from "react";
 
 const ContactsPage = () => {
+    useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [])
     return(
         <div className="container">
             <HomeButton />
