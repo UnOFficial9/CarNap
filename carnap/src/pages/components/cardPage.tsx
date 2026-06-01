@@ -18,11 +18,11 @@ const CardPage = (props: { id: any }) => {
         window.scrollTo(0, 0);
     }, [])
     return (
-        <div className="w-100 container" style={{
+        <div className="w-100 container " style={{
             padding: '10px',
         }}>
             <HomeButton />
-            <div className="p-3 mb-2 bg-light border rounded align-items-start d-flex flex-column flex-md-row justify-content-between"
+            <div className="p-3 mb-2 bg-light border rounded align-items-start d-flex flex-column justify-content-between"
                 style={{
                     minHeight: '500px',
                     maxHeight: '5000px'
@@ -41,6 +41,18 @@ const CardPage = (props: { id: any }) => {
 
                 }}>{description}</p>
 
+                {videoUrl?.length > 0 ? (<iframe src={videoUrl} className="ratio ratio-16x9" style={{
+                width: "100%",
+                minHeight: "90vh",
+                height: "max-content",
+                objectFit: "contain",
+                overflow: "hidden",
+                
+                margin: '0 auto'
+            }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen> </iframe>):null
+
+        }
+
             </div >
 
             <ul style={{
@@ -54,13 +66,7 @@ const CardPage = (props: { id: any }) => {
                     <li>{c}</li>
                 ))}
             </ul>
-            {videoUrl?.length > 0 ? (<iframe src={videoUrl} style={{
-                width: "100%",
-                minHeight: "800px",
-                objectFit: "contain"
-            }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>):null
-
-        }
+            
             
             <Link to={"/orderCall"} style={{display: 'flex', justifyContent: 'center' }}>
                 <h2 style={{
