@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/carnap/static/css/main.f47fccbe.css",
-    "main.js": "/carnap/static/js/main.7d3f29d6.js",
+    "main.js": "/carnap/static/js/main.d657c1c9.js",
     "static/js/453.b9656c3e.chunk.js": "/carnap/static/js/453.b9656c3e.chunk.js",
     "index.html": "/carnap/index.html",
     "main.f47fccbe.css.map": "/carnap/static/css/main.f47fccbe.css.map",
-    "main.7d3f29d6.js.map": "/carnap/static/js/main.7d3f29d6.js.map",
+    "main.d657c1c9.js.map": "/carnap/static/js/main.d657c1c9.js.map",
     "453.b9656c3e.chunk.js.map": "/carnap/static/js/453.b9656c3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f47fccbe.css",
-    "static/js/main.7d3f29d6.js"
+    "static/js/main.d657c1c9.js"
   ]
 }
